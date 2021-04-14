@@ -1,0 +1,17 @@
+ul{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+li {
+    display: block;
+    border: 3px solid #0e5e90;
+    text-align: center;
+    width: 120px;
+    list-style-type: none;
+    margin: 3px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    
+
+}
