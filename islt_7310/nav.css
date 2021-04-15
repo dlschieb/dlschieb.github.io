@@ -12,6 +12,60 @@ li {
     margin: 3px;
     padding: 5px 5px 5px 5px;
     position: relative;
-    
+}
+/*set the active page class to any <li> that has the class*/
+.active a:link {
+    background-color: aliceblue;
+}
 
+/*format and position the main navigation menu*/
+nav {
+    top: 80px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav>ul li {
+    width: 150px; /*this is important to set so our drop-down doesn't go across the page*/
+    position: relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
+    text-align: center;
+    font-weight: bold;
+    color: darkmagenta;
+}
+nav ul li {
+    margin-bottom: 2px;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 5px 5px 5px;
+        
+        }
+
+/*format all navigation <a> elements*/
+nav a:link{
+    background-color: aliceblue;
+}
+nav a:hover, nav a:focus {
+    background-color: aquamarine;
+}
+nav a:active{
+    background-color: aliceblue;
+}
+
+
+/*position sub-menu or drop-down*/
+nav ul>li ul {
+    position: relative;
+    top: 0;
+    right: 11px;
+    bottom: 100%;
+    display: none;
+}
+
+/*special hover to display the drop-down*/
+nav>ul>li:hover>ul{
+    display: block;
 }
