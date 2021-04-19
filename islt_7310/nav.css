@@ -1,71 +1,73 @@
-ul{
-    bottom: 0;
-    right: 0;
-    position: fixed;
-}
-li {
-    display: block;
-    border: 3px solid #0e5e90;
-    text-align: center;
-    width: 120px;
-    list-style-type: none;
-    margin: 3px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-}
 /*set the active page class to any <li> that has the class*/
 .active a:link {
-    background-color: aliceblue;
+    background-color: #007516;
 }
 
 /*format and position the main navigation menu*/
 nav {
-    top: 80px;
+    position: relative;
+    top: 0px;   
+    background-color: #006466;
+    display: flex;
+    justify-content: space-between;
 }
 nav ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+    
 }
 nav>ul li {
-    width: 150px; /*this is important to set so our drop-down doesn't go across the page*/
     position: relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
     text-align: center;
     font-weight: bold;
-    color: darkmagenta;
-}
-nav ul li {
-    margin-bottom: 2px;
+    color: white;
+    float: left;
 }
 nav a {
     text-decoration: none;
-    display: block;
-    padding: 5px 5px 5px 5px;
-        
-        }
+    color: white;
+    display: inline-block;
+    padding: 15px 15px;
+    width: 100px; /*this is important to set so our drop-down doesn't go across the page*/
+    margin: 0;
+}
 
 /*format all navigation <a> elements*/
 nav a:link{
-    background-color: aliceblue;
+    background: #006466;
 }
 nav a:hover, nav a:focus {
-    background-color: aquamarine;
+    background-color: #0e5e90;        
 }
 nav a:active{
-    background-color: aliceblue;
+    background-color: #007516;
 }
-
-
 /*position sub-menu or drop-down*/
 nav ul>li ul {
-    position: relative;
-    top: 0;
-    right: 11px;
-    bottom: 100%;
+    position: absolute;
+    top: 100%;
     display: none;
+}
+nav ul ul li {
+    float:none;
 }
 
 /*special hover to display the drop-down*/
 nav>ul>li:hover>ul{
     display: block;
+}
+li:hover > ul.drop-menu li {
+    display: flex;
+    flex: 1;
+}
+li > ul.drop-menu {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 100%;
+    width: 100%;
 }
