@@ -7,9 +7,10 @@
 nav {
     position: relative;
     top: 0px;   
-    background-color: #006466;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: #006466;
 }
 nav ul {
     display: flex;
@@ -17,7 +18,7 @@ nav ul {
     margin: 0;
     padding: 0;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     
 }
 nav>ul li {
@@ -28,9 +29,11 @@ nav>ul li {
     float: left;
 }
 nav a {
+    position: relative;
+    text-align: center;
     text-decoration: none;
     color: white;
-    display: inline-block;
+    display:inline-block;
     padding: 15px 15px;
     width: 100px; /*this is important to set so our drop-down doesn't go across the page*/
     margin: 0;
