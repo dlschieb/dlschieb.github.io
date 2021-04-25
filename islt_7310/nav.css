@@ -92,7 +92,7 @@ nav a.icon {
 }
 @media only screen and (max-width: 600px) {
     #hamburger {
-        display: inline-block;        
+        display: block;        
         padding-left: 20px;        
         width: 26px;        
         float: none;        
@@ -105,6 +105,7 @@ nav a.icon {
     nav:hover ul {display: block;}
     nav:hover #mobileHide {display: none;}
     nav li {
+        position: relative;
         text-align: center;
         padding: 0;
         margin: 0;}    
@@ -113,7 +114,6 @@ nav a.icon {
         font-weight: bold;       
         float: left;
         position: relative;}
-    nav ul li:hover ul {display: block;}
     nav a {    
         text-decoration: none;    
         display: block;    
@@ -123,14 +123,13 @@ nav a.icon {
         width: 240px;    
         margin-bottom: 2px;}
     /*position sub-menu or drop-down*/
-    nav ul>li ul {
-        position: absolute;
+    nav ul li ul {
+        display: none;
         top: 0;
         left: 275px;
-        display: none;}
+    }
     /*special hover to display the drop-down*/
-    nav>ul>li:hover>ul{
+    nav ul li:hover ul {
         display: block;}
-
-}
+    }
 
