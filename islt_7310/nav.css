@@ -11,6 +11,8 @@ nav {
     justify-content: flex-start;
     text-align: center;
     background-color: #006466;
+    text-decoration: none;
+    font-size: 17px;
 }
 nav ul {
     display: flex;
@@ -46,6 +48,9 @@ nav a:link{
 nav a:hover, nav a:focus {
     background-color: #0e5e90;        
 }
+nav .icon {
+    display:none;
+}
 nav a:active{
     background-color: #007516;
 }
@@ -73,4 +78,19 @@ li > ul.drop-menu {
     left: 0;
     top: 100%;
     width: 100%;
+}
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+        float: right;
+        display: flex;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav.responsive {position: relative;}
+    nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
