@@ -54,9 +54,11 @@ blockquote p {
   }
 footer {
     text-align: right;
+    background-image: url(images/favicon\ orange\ cat\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 400px;
 }
-
-
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
