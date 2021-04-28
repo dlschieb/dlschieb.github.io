@@ -59,6 +59,25 @@ footer {
     background-position-y: center;
     background-position-x: 400px;
 }
+.phonebig {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition:width 0.3s linear 0s; z-index:10;
+}
+.emailbig {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition:width 0.3s linear 0s; z-index:10;
+}
+.phone:hover + .phonebig {
+    width: 40px;
+
+}
+.email:hover + .emailbig {
+    width: 40px;
+}
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
