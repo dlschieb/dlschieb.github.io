@@ -1,87 +1,88 @@
-/*set the active page class to any <li> that has the class*/
-.active a:link {
-    background-color: #007516;
-}
-#hamburger {
-    display: none;
-}
-
-/*format and position the main navigation menu*/
-nav {
-    position: relative;
-    top: 0px;   
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-    background-color: #006466;
-    text-decoration: none;
-    font-size: 17px;
-}
-nav ul {
-    display: flex;
-    list-style-type: none;
+* {
     margin: 0;
     padding: 0;
-    align-items: center;
-    justify-content: space-evenly;
-    
 }
-nav>ul li {
-    position: relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
+
+#hamburger {
+    display: none;
+    color: white;
+}
+.active {
+    background-color: green;
+}
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    background-color:#006466;
+}
+
+nav ul {
+    position: sticky;
+    position: -webkit-sticky;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    border-right: 1px solid white;
     text-align: center;
     font-weight: bold;
-    color: white;
-    float: left;
-    margin: 0px;
-}
-nav a {
     position: relative;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    display:inline-block;
-    padding: 15px 15px;
-    width: 100px; /*this is important to set so our drop-down doesn't go across the page*/
-    margin: 0;
 }
 
-/*format all navigation <a> elements*/
-nav a:link{
-    background: #006466;
+nav ul li:last-child {
+    border-right: none;
 }
-nav a:hover, nav a:focus {
-    background-color: #0e5e90;        
-}
-nav .icon {
-    display:none;
-}
-nav a:active{
-    background-color: #007516;
-}
-/*position sub-menu or drop-down*/
-nav ul>li ul {
-    position: absolute;
-    top: 100%;
-    display: none;
-}
-nav ul ul li {
-    float:none;
+nav ul li:hover {
+    background: #0a466b;
 }
 
-/*special hover to display the drop-down*/
-nav>ul>li:hover>ul{
+nav ul li a {
     display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-li:hover > ul.drop-menu li {
-    display: flex;
-    flex: 1;
-}
-li > ul.drop-menu {
+
+nav ul li ul {
+    display: none;
     position: absolute;
-    display: flex;
-    left: 0;
-    top: 100%;
-    width: 100%;
+    background-color: #0a3636;
+    opacity: 0;
+    visibility: hidden;
+    transition: 2s;
+}
+
+nav ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  
+}
+
+nav ul li ul li {
+    width: 180px;
+    border-bottom: 1px solid white;
+    border-right: none;
+}
+
+nav ul li ul li a {
+    padding: 14px 16px;
+    background-color: #0a3636;
+    width: 150px;
+}
+
+nav ul li ul li a:hover {
+    background-color: rgb(33, 33, 66);
+    width: 150px;
 }
 nav a.icon {
     background: white;
@@ -90,8 +91,14 @@ nav a.icon {
     right: 0;
     top: 0;
 }
-@media only screen and (max-width: 600px) {
+nav a:hover, nav a:focus {
+    background-color: #0a466b;
+}
+
+ 
+@media screen and (max-width: 800px){
     #hamburger {
+        color: white;
         display: block;        
         padding-left: 20px;        
         width: 26px;        
@@ -100,8 +107,9 @@ nav a.icon {
     nav ul, nav:active ul {
         display: none;
         position: absolute;
-        padding: 20px 20px 20px 0px;
-        top: 20px;}
+        top: 45px;
+
+    }
     nav:hover ul {display: block;}
     nav:hover #mobileHide {display: none;}
     nav li {
@@ -113,7 +121,13 @@ nav a.icon {
         text-align: left;    
         font-weight: bold;       
         float: left;
-        position: relative;}
+        position: relative;
+        background-color: #006466;
+        border-bottom: 1px solid white;
+    }
+    nav ul li:last-child {
+        border-bottom: none;
+    }
     nav a {    
         text-decoration: none;    
         display: block;    
@@ -123,13 +137,22 @@ nav a.icon {
         width: 240px;    
         margin-bottom: 2px;}
     /*position sub-menu or drop-down*/
+    .dropdown {
+        display: none;
+    }
     nav ul li ul {
         display: none;
         top: 0;
+        width: 180px;
         left: 275px;
     }
     /*special hover to display the drop-down*/
     nav ul li:hover ul {
-        display: block;}
+        display: block;
+        width: 180px;
     }
+}
 
+    
+
+  
