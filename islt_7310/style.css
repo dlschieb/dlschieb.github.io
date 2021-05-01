@@ -79,11 +79,11 @@ footer {
 .email:hover + .emailbig {
     width: 40px;
 }
-image {
-    width: 100vh;
-    height: 75vh;
-
+footer {
+    font-size: 0.75em;
+   
 }
+
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
