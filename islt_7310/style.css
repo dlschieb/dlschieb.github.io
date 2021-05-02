@@ -6,7 +6,8 @@
     font-family: Arial, Helvetica, sans-serif; 
     font-weight:800;
     font-size: 40px;
-    color: rgb(20, 58, 27) ;
+    color: #173e3f;
+    ;
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -16,23 +17,31 @@ h2 {
 }
 h3 {
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    color: #006466 ;
+    font-weight: 200;
+    font-size: 25px;
+    color: #006466;
+}
+h6 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
 }
 main {
-    width: 600px;
+    width: 100%;
     border: none;
     padding: 0px;
     margin: 0;
     font-size: 30px;
+    justify-content: center;
   }
 embed {
-    position: center;
+    width: 500px;
+    height: 400px;
 }
 a.resume {
     font-family: Arial, Helvetica, sans-serif;
     font-weight:800;
-    color: #0c4e18 ;
+    color: #214628 ;
 }
 blockquote {
     background: #ffffff;
@@ -88,11 +97,53 @@ footer {
     body {
         background-color: lightblue;
       }
+    .imageme {
+        width: 100%;
+    }
   }
 
 @media screen and (max-width: 600px) {
-    .main {
+    #heading {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    embed {
+        width: 100%;
+    }
+    p {
         font-size: 20px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .main {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    embed {
+        width: 100%;
+        height: auto;
+    }
+    .imageme {
+        float: right;
+    }
+    .about {
+        float: left;
+    }
+    .student {
+        float: left;
+    }
+    .welcome {
+        float: right;
     }
 }
 @media print {
