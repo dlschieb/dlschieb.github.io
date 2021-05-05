@@ -2,24 +2,57 @@
     font-family: 'Montserrat', sans-serif;
     src: url('Montserrat-BoldItalic.ttf');
 }
+.logo {
+    position: relative;
+    border: 3px solid #1b4661;
+    padding: 2px 3px 2px 2px;
+    margin: 5px 2px 5px 10px;
+    background-color: white;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: #23516d;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 4px;
+}
 #heading {
     font-family: Arial, Helvetica, sans-serif; 
-    font-weight:800;
+    font-weight:700;
     font-size: 40px;
     color: #173e3f;
-    ;
+    padding: 20px;
+    text-align: center;
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     color: #0E5E90;
+    padding: 5px 5px;
 }
+
+.about {
+    border-bottom: 3px solid #23516d;
+    text-align: center;  
+    font-size: 40px;
+
+}
+
 h3 {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 25px;
     color: #006466;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #006466;
+}
+h4 {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    padding: 5px  5px;
+    text-align: center;
+    border-bottom: 1px solid #006466;
 }
 h6 {
     font-family:Arial, Helvetica, sans-serif;
@@ -27,21 +60,30 @@ h6 {
     font-weight: 200;
 }
 main {
-    width: 100%;
-    border: none;
-    padding: 0px;
+    padding: 10px;
     margin: 0;
-    font-size: 30px;
-    justify-content: center;
+    font-size: 2vw;
+    font-size: 20px;
+    text-align: justify;
   }
 embed {
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: auto;
 }
-a.resume {
+.resume {
     font-family: Arial, Helvetica, sans-serif;
     font-weight:800;
-    color: #214628 ;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #173e3f;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
+    margin: 5px 0 10px;
+    background-color: #23516d;
+}
+.res {
+    margin: 20px 10px;
+
 }
 blockquote {
     background: #ffffff;
@@ -61,9 +103,7 @@ blockquote:before {
     margin-right: 0.25em;
     vertical-align: -0.4em;
   }
-blockquote p {
-    display: inline;
-  }
+
 footer {
     text-align: right;
     color: black !important;
@@ -91,18 +131,292 @@ footer {
 footer {
     font-size: 0.75em;
 }
+/*table*/
 
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 2px 2px;
+    text-align: center;
+}
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-      }
-    .imageme {
-        width: 100%;
+th {
+    background-color:#41a8aa;
+}
+tr:nth-child(even) {
+    background-color: rgb(153, 153, 206);
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+@media screen and (min-width: 800px) {
+/*index page*/
+
+.main {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    
+}
+.student {
+    max-width: 500px;
+    height: auto;
+    grid-column: 2/3;
     }
-  }
+
+.welcome {
+    grid-column: 1/2;
+}
+/*about*/
+    .biography {
+        display: grid;
+        align-items: stretch;
+        grid-template-columns: 250px .75fr 1.25fr;
+        grid-template-rows: 1fr 150px;
+    }
+    .imageme {
+        padding: 0;
+        width: 250px;
+        height: auto;
+        position: relative;
+    }
+    .bio {
+        padding: 10px 5px 10px 5px;
+        align-items: flex-end;
+    }
+
+    .res {
+        text-align: center;
+        margin: 20px;
+        grid-column: 1;
+        grid-row:2;
+        align-items: flex-start;
+    }
+    .video {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .blockquote {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    /*reflection*/
+
+    .reflection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    p.ref {
+        padding: 7px;
+        text-align: left;
+    }
+
+    img.orange {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
+}
+    img.blue {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
+}
+    img.red {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
+}
+    img.green {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
+}
+/*projects*/
+    img.orangelarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.bluelarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.redlarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.greenlarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+.foundations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.foundationsa {
+    padding: 5px;
+}
+.foundationsb {
+    padding: 5px;
+}
+.awards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.awardsa {
+    padding: 5px;
+}
+.awardsb {
+    padding: 5px;
+}
+
+.legacies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.legaciesa {
+    padding: 5px;
+}
+.legaciesb {
+    padding: 5px;
+}
+
+.crochet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.crocheta {
+    padding: 5px;
+}
+.crochetb {
+    padding: 5px;
+}
+}
+@media screen and (max-width: 800px) and  (min-width: 600px) {
+    
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    /*index*/
+    .about {
+        text-align: center;
+    }
+    .student {
+        max-width: 200px;
+        height: auto;
+    }
+    embed {
+        width: 100%;
+        height: auto;
+    }
+    .imageme {
+        float: right;
+    }
+    .biography {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 150px;
+        grid-gap: 5px;
+    }
+   /*reflection*/
+    img.orange {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+    padding: 5px;
+}
+    img.blue {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+    padding: 5px;
+}
+    img.red {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+    padding: 5px;
+}
+    img.green {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+    padding: 5px;
+}
+
+/*projects*/
+    img.orangelarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.bluelarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.redlarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.greenlarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+}
+
 
 @media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
     #heading {
         font-size: 25px;
     }
@@ -112,40 +426,124 @@ footer {
     h2 {
         font-size: 15px;
     }
-    embed {
-        width: 100%;
-    }
+    
     p {
         font-size: 20px;
     }
-}
-@media screen and (max-width: 780px) {
-    .main {
-        font-size: 30px;
-    }
-    h1 {
-        font-size: 35px;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    embed {
-        width: 100%;
-        height: auto;
-    }
-    .imageme {
-        float: right;
-    }
+
     .about {
-        float: left;
+        text-align: center;
     }
-    .student {
-        float: left;
+
+/*index*/
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .welcome {
-        float: right;
+        grid-column: 1/2;
     }
+    .student {
+        max-width: 200px;
+        height: auto;
+        grid-column: 1/2;
+        padding: 40px 20px 30px 75px;
+    }
+/*about*/
+
+    .imageme {
+        padding: 20px 15px 10px 50px;
+        width: 250px;
+        height: auto;
+        
+    }
+    .bio {
+        padding: 10px 5px 10px 5px;
+       
+    }
+
+    .resume {
+        text-align: center;
+        margin: 20px;
+        
+        
+    }
+    .video {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+/*reflection*/
+img.orange {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
 }
+img.blue {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
+}
+img.red {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
+}
+img.green {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 5px;
+}
+/*project*/
+img.orangelarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.bluelarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.redlarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+    img.greenlarge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 5px;
+}
+/*table*/
+.table-scroller {
+    overflow-x:auto;
+    width: 320px;
+}
+
+}
+
+
 @media print {
     * {
         background: transparent !important;
@@ -164,6 +562,9 @@ footer {
         display: none;
     }
     embed {
+        display: none;
+    }
+    .imageme {
         display: none;
     }
 @page {

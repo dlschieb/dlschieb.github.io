@@ -3,16 +3,11 @@
     padding: 0;
 }
 
-#hamburger {
-    display: none;
-    color: white;
-}
 .active {
-    background-color: green;
+    background-color: rgb(28, 109, 28);
 }
 nav {
     position: sticky;
-    position: -webkit-sticky;
     display: flex;
     width: 100%;
     height: 45px;
@@ -21,7 +16,6 @@ nav {
 
 nav ul {
     position: sticky;
-    position: -webkit-sticky;
     float: left;
     display: flex;
     justify-content: flex-start;
@@ -66,7 +60,6 @@ nav ul li:hover ul {
     display: block;
     opacity: 1;
     visibility: visible;
-  
 }
 
 nav ul li ul li {
@@ -96,15 +89,48 @@ nav a:hover, nav a:focus {
     background-color: #0a466b;
 }
 
- 
-@media screen and (max-width: 800px){
-    #hamburger {
+label {
+    margin: 0 0 40px 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+} 
+
+#hamburger {
+    display: none;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    label {
+        display: block;
+        cursor: pointer;
         color: white;
-        display: block;        
-        padding-left: 20px;        
-        width: 26px;        
-        float: none;        
-        font-size: 2em;}
+        position: absolute;
+        right: 25px;
+        top: -10px;
+    }
+
+   
+}
+
+@media screen and (max-width: 800px){
+    label {
+        display: block;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        right: 25px;
+        top: -10px;
+    }
+
+
+    #hamburger:checked + .nav {
+        display: block;
+    }
+
     nav ul, nav:active ul {
         display: none;
         position: absolute;
@@ -119,9 +145,9 @@ nav a:hover, nav a:focus {
         padding: 0;
         margin: 0;}    
     nav>ul li {    
-        text-align: left;    
+        text-align: center;    
         font-weight: bold;       
-        float: left;
+        float: center;
         position: relative;
         background-color: #006466;
         border-bottom: 1px solid white;
