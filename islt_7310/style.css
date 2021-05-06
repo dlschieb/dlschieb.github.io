@@ -154,6 +154,66 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: white;
 }
+/*contact*/
+section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#173e3f;
+}
+.contact{
+    width: 90%;
+    max-width: 900px;
+    margin:0 auto;
+    padding:15px;
+    box-shadow: 0px 0px 20px #00000040;
+    background-color:#41a8aa;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    
+     }
+
+.form-group{ 
+     width: 100%;
+    margin-top:10px;
+    font-size: 20px;
+    
+}
+       
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding: 2px;
+    font-size: 18px;
+    border: 1px solid black;
+    margin-top:3px;}
+    
+textarea{
+        resize: vertical;
+          }
+
+
+    button[type="submit"]{
+        width:100%;
+        border:none;
+        outline:none;
+        padding:20px;
+        font-size: 20px;
+        border-radius: 8px;
+        color: black;
+        background-color: white;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px;
+ }
+    button[type="submit"]:hover{
+        background-color: rgb(153, 153, 206);
+        transition: .3s ease 
+   }
+
 
 @media screen and (min-width: 800px) {
 /*index page*/

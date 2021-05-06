@@ -89,7 +89,7 @@ nav a:hover, nav a:focus {
     background-color: #0a466b;
 }
 
-label {
+.hamburger {
     margin: 0 0 40px 0;
     font-size: 26px;
     line-height: 70px;
@@ -104,7 +104,7 @@ label {
 }
 
 @media only screen and (max-width: 600px) {
-    label {
+    .hamburger {
         display: block;
         cursor: pointer;
         color: white;
@@ -117,7 +117,7 @@ label {
 }
 
 @media screen and (max-width: 800px){
-    label {
+    .hamburger {
         display: block;
         cursor: pointer;
         color: white;
