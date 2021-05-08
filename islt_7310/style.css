@@ -237,36 +237,41 @@ textarea{
     .biography {
         display: grid;
         align-items: stretch;
-        grid-template-columns: 250px .75fr 1.25fr;
-        grid-template-rows: 1fr 150px;
+        grid-template-columns: 350px 1fr 150px;
+        grid-template-rows: 1fr 1fr;
     }
     .imageme {
         padding: 0;
-        width: 250px;
+        width: 100%;
         height: auto;
         position: relative;
     }
     .bio {
-        padding: 10px 5px 10px 5px;
+        padding: 10px 10px 10px 15px;
         align-items: flex-end;
+        grid-column: 2/4;
     }
-
+    .video {
+        padding: 20px 10px 0 40px;
+        margin: 0;
+        width: 400px;
+        
+        height: auto;
+        grid-row: 2;
+        grid-column: 2/4;
+    }
+    
+    
     .res {
         text-align: center;
         margin: 20px;
+        padding: 15px;
         grid-column: 1;
-        grid-row:2;
         align-items: flex-start;
     }
-    .video {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: auto;
-    }
+    
     .blockquote {
-        grid-column: 3/4;
-        grid-row: 2/3;
+        grid-column: 2;
     }
     /*reflection*/
 
@@ -408,9 +413,42 @@ textarea{
     }
     .biography {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 150px;
-        grid-gap: 5px;
+        align-items: stretch;
+        grid-template-columns: 350px 1fr 150px;
+        grid-template-rows: 1fr 1fr;
+    }
+    .imageme {
+        padding: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .bio {
+        padding: 10px 10px 10px 15px;
+        align-items: flex-end;
+        grid-column: 2/4;
+    }
+    .video {
+        padding: 20px 10px 0 40px;
+        margin: 0;
+        width: 400px;
+        
+        height: auto;
+        grid-row: 2;
+        grid-column: 2/4;
+    }
+    
+    
+    .res {
+        text-align: center;
+        margin: 20px;
+        padding: 15px;
+        grid-column: 1;
+        align-items: flex-start;
+    }
+    
+    .blockquote {
+        grid-column: 2;
     }
    /*reflection*/
     img.orange {
