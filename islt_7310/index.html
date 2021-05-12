@@ -6,7 +6,7 @@
                <link rel="stylesheet" href="nav.css">
                <link rel="preconnect" href="https://fonts.gstatic.com">
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-               <link rel="shortcut icon" type="image/png" href="images/favicon cat.ico">
+               <link rel="shortcut icon" type="image/png" href="images/faviconcat.ico">
                <meta name="viewport" content="width=device-width,initial-scale=1">
                <title>Home Page</title>
 </head>
@@ -30,6 +30,27 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <SCRIPT LANGUAGE="JavaScript">
+        <!--
+        
+        //Bread crumb script - Kevin Lynn Brown
+        //Duplicate directory names bug fix by JavaScriptKit.com
+        //Visit JavaScript Kit (http://javascriptkit.com) for script
+        
+        var path = "";
+        var href = document.location.href;
+        var s = href.split("/");
+        for (var i=2;i<(s.length-1);i++) {
+        path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+        }
+        i=s.length-1;
+        path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+        var url = window.location.protocol + "//" + path;
+        document.writeln(url);
+        //-->
+        </script>
+        
+        
 <header>
     <h1 id="heading">Welcome to My Library Science Portfolio Page!</h1>
     <h2 class="about">About This Site</h2>
@@ -39,15 +60,18 @@
     <p class="welcome">
         This portfolio will provide a record of growth throughout my Master’s program of Library and Information Science at the University of Missouri iSchool, reflecting the various skills and lessons learned throughout my course of study. The University of Missouri iSchool includes several signature assignments that students fulfill throughout their course of study. I include samples of course work that act illustrations of the program's four stated student learning objectives. I outline the strengths and weaknesses I find in my work to further explore my growth in the program and to identify areas of potential improvement.
     </p>
-    <img src="images/android-chrome-512x512.png" class="student">
+    <img src="images/android-chrome-512x512.png" class="student" alt="student">
 </main>
 
 <footer class="footer">
    Danielle Schieber <br>
-   <img src="images/favicon-16x16.png" class="email"> <img src="images/favicon.ico" class="emailbig">dlscx3@umsystem.edu<br>
-    <img src="images/favicon phone.png" class="phone"> <img src="images/favicon phone.ico" class="phonebig">1-888-888-8888<br>
+   <img src="images/favicon-16x16.png" class="email" alt="email"> <img src="images/favicon.ico" class="emailbig" alt="bigemail">dlscx3@umsystem.edu<br>
+    <img src="images/faviconphone.png" class="phone" alt="phone"> <img src="images/faviconphone.ico" class="phonebig" alt="bigphone">1-888-888-8888<br>
     Copyright &copy; 2021<br>
     Icons by <a href=" https://twitter.com/johnsorrentino">John Sorrentino</a> on <a href="https://favicon.io/emoji-favicons/">favicons.io</a>
+<p align="left">This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
+<a href='https://www.counters-free.net/'>free Counters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=ebce842cfd4d58be9eccf8b36b815346fc72035b'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/825566/t/7"></script>
 </footer>
 </body>
 </html>
